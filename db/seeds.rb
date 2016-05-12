@@ -1,0 +1,20 @@
+User.create(first_name: "Jessica", last_name: "Rowland", email: "rowlandjl@vcu.edu")
+User.create(first_name: "David", last_name: "Wright", email: "email@email.com")
+User.create(first_name: "Derek", last_name: "Jeter", email: "email@email.com")
+User.create(first_name: "Alex", last_name: "Rodriguez", email: "email@email.com")
+User.create(first_name: "Yogi", last_name: "Berra", email: "email@email.com")
+User.create(first_name: "Jorge", last_name: "Posada", email: "email@email.com")
+
+Project.create(name: "science fair project")
+Project.create(name: "systems check", description: "migrations, models and activerecord")
+
+Team.create(user_id: 1, project_id: 1)
+Team.create(user_id: 2, project_id: 1)
+Team.create(user_id: 3, project_id: 1)
+Team.create(user_id: 4, project_id: 2)
+Team.create(user_id: 5, project_id: 2)
+Team.create(user_id: 6, project_id: 2)
+
+Task.create(name: "research topic", description: "search google and journal articles", due_date: "2016-04-01", project_id: 1, user_id: 2)
+Task.create(name: "put together presentation", project_id: 1, user_id: 3)
+Task.create(name: "write code for migrations", project_id: 2, user_id: 5)
